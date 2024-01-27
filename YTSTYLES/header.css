@@ -1,0 +1,135 @@
+.header {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgb(245, 245, 245);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(241, 241, 241);
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.middle {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+.right {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.hamburger-menu {
+  height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.youtube-logo {
+  height: 20px;
+}
+.search-button {
+  height: 37px;
+  width: 66px;
+  background-color: rgb(241, 241, 241);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+.search-button,
+.voice-search,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.search-button .tooltip,
+.voice-search .tooltip,
+.container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search:hover .tooltip,
+.container:hover .tooltip {
+  opacity: 1;
+}
+.voice-search {
+  height: 37px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+.searchbar {
+  width: 0;
+  flex: 1;
+  height: 34px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.searchbar::placeholder {
+  font-size: 16px;
+}
+.search-icon {
+  height: 25px;
+}
+.voice-icon {
+  height: 24px;
+}
+.upload,
+.notifications,
+.apps {
+  height: 24px;
+}
+.pic {
+  height: 32px;
+  border-radius: 50%;
+}
+.notification-count-icon {
+  position: relative;
+}
+.notification-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 50%;
+}
